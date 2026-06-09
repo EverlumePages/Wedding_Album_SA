@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tharushi &amp; Lahiru — A Keepsake</title>
+<meta name="description" content="The kept memories of Tharushi & Lahiru's wedding — photographs and short films from a single perfect day at Lake Como.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="center">
+    <div class="pl-mono">T <span style="font-style:italic;color:var(--gold)">&amp;</span> L</div>
+    <div class="pl-line"></div>
+    <div class="pl-sub">A Keepsake</div>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <a class="nav__brand" href="index.html">Tharushi &amp; Lahiru<small>Lake Como · MMXXV</small></a>
+  <nav class="nav__menu">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="film.html">Films</a>
+    <a href="story.html">Our Story</a>
+  </nav>
+  <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__media" data-parallax="0.12">
+    <img
+      src="https://images.pexels.com/photos/15161892/pexels-photo-15161892.jpeg?auto=compress&cs=tinysrgb&w=1800"
+      srcset="https://images.pexels.com/photos/15161892/pexels-photo-15161892.jpeg?auto=compress&cs=tinysrgb&w=900 900w,
+              https://images.pexels.com/photos/15161892/pexels-photo-15161892.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w,
+              https://images.pexels.com/photos/15161892/pexels-photo-15161892.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w"
+      sizes="100vw" alt="Tharushi and Lahiru walking away, the bride's long veil trailing behind" fetchpriority="high">
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__inner">
+    <span class="hero__pre">Forever begins · 20 · 09 · 25</span>
+    <h1 class="hero__names">Tharushi <span class="amp">&amp;</span> Lahiru</h1>
+    <p class="hero__sub">A single perfect day, kept forever — every glance, every vow, every last petal.</p>
+    <div class="hero__meta">
+      <span>Lake Como</span><span class="dot"></span><span>Italy</span>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <span class="bar"></span>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section">
+  <div class="wrap intro">
+    <div class="reveal">
+      <span class="eyebrow">The Keepsake</span>
+      <h2 class="intro__title" style="margin-top:1.4rem">Some days are too lovely<br>to live only <em>once</em>.</h2>
+    </div>
+    <div class="reveal" data-d="1">
+      <p style="font-size:1.05rem">This is where ours lives on. Not an invitation, not a plan — a place to return to. Pour a glass, take your time, and wander back through the morning nerves, the trembling vows, the first dance that lasted a lifetime in three minutes.</p>
+      <p style="margin-top:1.2rem">Two hundred photographs and sixteen little films, gathered so the day never has to fade.</p>
+      <a href="gallery.html" class="link-underline" style="margin-top:1.8rem;display:inline-block">Enter the gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- Feature editorial grid (filled by JS) -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="center reveal" style="margin-bottom:3rem">
+      <span class="eyebrow center">Moments</span>
+    </div>
+    <div class="featgrid" id="featgrid"></div>
+  </div>
+</section>
+
+<!-- Parallax divider 1 -->
+<section class="divider">
+  <div class="divider__media" data-parallax="0.16">
+    <img src="https://images.pexels.com/photos/34689158/pexels-photo-34689158.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="The couple walking a tree-lined road">
+  </div>
+  <div class="divider__inner">
+    <span class="eyebrow center" style="color:var(--paper);justify-content:center">— The vow —</span>
+    <p class="display script" style="margin-top:1rem">“To you, always.”</p>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section">
+  <div class="wrap">
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<!-- Film teaser -->
+<section class="section section--tight">
+  <div class="wrap teaser">
+    <div class="teaser__media reveal-img" id="filmTeaserMedia">
+      <div class="play-badge"><span class="play-glyph"></span></div>
+    </div>
+    <div class="teaser__txt reveal" data-d="1">
+      <span class="teaser__num">No. 02</span>
+      <h2>The films,<br>still moving.</h2>
+      <p>Sixteen short memories — ten seconds here, a stolen minute there. The kiss on the brow, the confetti, the first look beneath the archway. Press play and be there again.</p>
+      <div class="miniposters" id="miniposters"></div>
+      <a href="film.html" class="btn btn--gold" style="margin-top:2rem">Watch the films</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery teaser -->
+<section class="section section--tight">
+  <div class="wrap teaser teaser--rev">
+    <div class="teaser__txt reveal">
+      <span class="teaser__num">No. 01</span>
+      <h2>Two hundred<br>photographs.</h2>
+      <p>From the quiet of getting ready to the last dance under the lights — every chapter of the day, captured. Browse by the moment that matters to you.</p>
+      <a href="gallery.html" class="btn" style="margin-top:2rem">Open the gallery</a>
+    </div>
+    <div class="teaser__media reveal-img">
+      <img loading="lazy" src="https://images.pexels.com/photos/16885265/pexels-photo-16885265.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="A bride with a dramatic flowing veil">
+    </div>
+  </div>
+</section>
+
+<!-- Parallax divider 2 / quote -->
+<section class="divider">
+  <div class="divider__media" data-parallax="0.16">
+    <img src="https://images.pexels.com/photos/16228145/pexels-photo-16228145.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="Newlyweds on a golden field">
+  </div>
+  <div class="divider__inner quote">
+    <span class="quote__mark">”</span>
+    <p style="color:var(--paper)">And suddenly all the love songs were about us.</p>
+  </div>
+</section>
+
+<!-- Story teaser -->
+<section class="section">
+  <div class="wrap center" style="max-width:760px;margin-inline:auto">
+    <span class="eyebrow center reveal">How it began</span>
+    <h2 class="reveal" data-d="1" style="font-size:clamp(2.2rem,5vw,4rem);margin:1.4rem 0 1.4rem">A spilled coffee.<br>A borrowed napkin.<br><span class="script" style="color:var(--gold-deep)">A whole life.</span></h2>
+    <p class="reveal" data-d="2" style="max-width:52ch;margin-inline:auto">Six years from that first hello to a promise beneath the cypress trees. Read the long way round to forever.</p>
+    <a href="story.html" class="link-underline reveal" data-d="3" style="margin-top:2rem;display:inline-block">Read our story</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fmono">Tharushi <span class="amp">&amp;</span> Lahiru</div>
+    <div class="fsub">Married · the Twentieth of September · Two Thousand Twenty-Five</div>
+    <nav class="fnav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="film.html">Films</a>
+      <a href="story.html">Our Story</a>
+    </nav>
+    <div class="fcredit">With all our love · Kept with <span style="color:var(--gold)">♥</span> by <a href="#">Everlume</a> · © <span data-year></span></div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+/* Home page glue — fills the data-driven bits from data.js */
+(function () {
+  // Feature editorial grid
+  const featIds = [
+    [HERO.featureWide, "f-a", "The walk into forever"],
+    [HERO.featureTall, "f-b", "Veil & wind"],
+    [PHOTO_IDS.romance[13], "f-c", "Only us"],
+    [PHOTO_IDS.celebration[2], "f-d", "Let the night begin"],
+    [PHOTO_IDS.getready[0], "f-e", "Before the vows"]
+  ];
+  const fg = document.getElementById("featgrid");
+  if (fg) {
+    fg.innerHTML = featIds.map(([id, cls, cap], i) => `
+      <figure class="${cls} reveal-img" data-d="${i % 3}">
+        <img loading="lazy" src="${pexImg(id,900)}" srcset="${pexSrcset(id)}" sizes="(max-width:760px) 50vw, 33vw" alt="${cap}">
+        <figcaption>${cap}</figcaption>
+      </figure>`).join("");
+  }
+
+  // Stats
+  const st = document.getElementById("stats");
+  if (st) {
+    st.innerHTML = SITE.stats.map((s, i) => `
+      <div class="stat reveal" data-d="${i}">
+        <div class="stat__n"><span data-count="${s.n}">0</span></div>
+        <div class="stat__l">${s.label}</div>
+      </div>`).join("");
+  }
+
+  // Film teaser big poster + mini posters
+  const ftm = document.getElementById("filmTeaserMedia");
+  if (ftm) {
+    const big = VIDEOS[3];
+    const img = document.createElement("img");
+    img.loading = "lazy"; img.alt = big.title;
+    img.src = pexImg(big.poster, 1100);
+    ftm.insertBefore(img, ftm.firstChild);
+    ftm.style.cursor = "pointer";
+    ftm.addEventListener("click", () => EVVideo.open(big.src, big.title, pexImg(big.poster,1100)));
+  }
+  const mp = document.getElementById("miniposters");
+  if (mp) {
+    const picks = [VIDEOS[1], VIDEOS[4], VIDEOS[8]];
+    mp.innerHTML = picks.map(v => `<div class="mp" data-src="${v.src}" data-title="${v.title}" data-poster="${pexImg(v.poster,600)}"><img loading="lazy" src="${pexImg(v.poster,500)}" alt="${v.title}"></div>`).join("");
+    mp.querySelectorAll(".mp").forEach(el =>
+      el.addEventListener("click", () => EVVideo.open(el.dataset.src, el.dataset.title, el.dataset.poster))
+    );
+  }
+
+  // re-run reveal/parallax now that DOM is injected
+  if (window.EVRefresh) window.EVRefresh();
+})();
+</script>
+</body>
+</html>

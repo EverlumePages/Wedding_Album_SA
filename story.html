@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Tharushi &amp; Lahiru</title>
+<meta name="description" content="From a spilled coffee to a promise beneath the cypress trees — the story of Tharushi & Lahiru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="preloader">
+  <div class="center">
+    <div class="pl-mono">T <span style="font-style:italic;color:var(--gold)">&amp;</span> L</div>
+    <div class="pl-line"></div>
+    <div class="pl-sub">Our Story</div>
+  </div>
+</div>
+
+<header class="nav">
+  <a class="nav__brand" href="index.html">Tharushi &amp; Lahiru<small>Lake Como · MMXXV</small></a>
+  <nav class="nav__menu">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="film.html">Films</a>
+    <a href="story.html">Our Story</a>
+  </nav>
+  <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<section class="pagehead">
+  <div class="pagehead__media" data-parallax="0.12">
+    <img src="https://images.pexels.com/photos/18942333/pexels-photo-18942333.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="A long veil trailing on a cobblestone street">
+  </div>
+  <div class="pagehead__inner">
+    <span class="eyebrow center" style="color:var(--paper);justify-content:center">The long way round</span>
+    <h1>Our Story</h1>
+    <p>Six years, two cities, and one unforgettable yes.</p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section section--tight">
+  <div class="wrap center" style="max-width:720px;margin-inline:auto">
+    <p class="lead reveal">It didn't begin with fireworks. It began with a Tuesday, a crowded café, and a coffee that ended up everywhere but the cup. What happened next took six wonderful years.</p>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- Parallax divider -->
+<section class="divider">
+  <div class="divider__media" data-parallax="0.16">
+    <img src="https://images.pexels.com/photos/26501992/pexels-photo-26501992.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Walking into the woods">
+  </div>
+  <div class="divider__inner quote">
+    <span class="quote__mark">”</span>
+    <p style="color:var(--paper)">Whatever our souls are made of, his and mine are the same.</p>
+    <cite style="color:rgba(246,241,232,.7)">— Emily Brontë</cite>
+  </div>
+</section>
+
+<!-- Guestbook -->
+<section class="section">
+  <div class="wrap guest">
+    <div class="center reveal" style="margin-bottom:2.6rem">
+      <span class="eyebrow center">Leave a note</span>
+      <h2 style="font-size:clamp(2rem,5vw,3.4rem);margin-top:1.2rem">The Guestbook</h2>
+      <p style="max-width:48ch;margin:1rem auto 0">A few words for the happy couple. Your note is kept right here in this little book.</p>
+    </div>
+
+    <form class="guest__form reveal" id="guestForm" data-d="1">
+      <div class="row">
+        <input type="text" name="name" placeholder="Your name" maxlength="40" required>
+        <input type="text" name="from" placeholder="(optional) Where you're writing from" maxlength="40">
+      </div>
+      <textarea name="msg" placeholder="Write something lovely…" maxlength="400" required></textarea>
+      <div><button type="submit" class="btn btn--gold">Sign the book</button></div>
+    </form>
+
+    <div class="guest__list" id="guestList"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="fmono">Tharushi <span class="amp">&amp;</span> Lahiru</div>
+    <div class="fsub">Married · the Twentieth of September · Two Thousand Twenty-Five</div>
+    <nav class="fnav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="film.html">Films</a>
+      <a href="story.html">Our Story</a>
+    </nav>
+    <div class="fcredit">With all our love · Kept with <span style="color:var(--gold)">♥</span> by <a href="#">Everlume</a> · © <span data-year></span></div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/story.js"></script>
+</body>
+</html>
